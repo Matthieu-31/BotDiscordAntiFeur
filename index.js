@@ -33,4 +33,9 @@ client.on("messageCreate", message => {
 
 })
 
+const exampleEmbed = new EmbedBuilder()
+.setColor(0xe510db)
+.setTitle('Bot anti-blague "feur"')
+.setDescription("J'ai créé ce petit bot, pour mettre fin au règne de la terreur que nous impose la blague du 'quoi ?' -Feur \n aucune commande à display, il ne sert qu'à contrer une blague trop répandue");
+
 client.login(token);
