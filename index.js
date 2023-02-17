@@ -13,7 +13,7 @@ const client = new Client
 
 client.on('ready', () => {
     console.log("salute");
-    client.user.setStatus("dnd");
+    client.user.setStatus("online");
     client.user.setActivity("contrer la blague du 'feur'");
 });
 
