@@ -18,9 +18,19 @@ client.on('ready', () => {
 });
 
 client.on("messageCreate", message => {
-    if(message.content==="feur"){
+
+    if(message.content.toUpperCase()==="FEUR"){
         message.reply("ouge");
     }
+
+    else if (message.content.toUpperCase()==="FEUR !"){
+        message.reply("ouge");
+    }
+
+    else if (message.content.toUpperCase()==="GORGE"){
+        message.reply("profonde");
+    }
+
 })
 
 client.login(token);
