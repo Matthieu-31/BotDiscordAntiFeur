@@ -24,16 +24,31 @@ const exampleEmbed = new EmbedBuilder()
 
 client.on("messageCreate", message => {
 
-    if(message.content.toUpperCase()==="FEUR"){
-        message.reply("ouge");
-    }
+    switch(message){
 
-    else if (message.content.toUpperCase()==="FEUR !"){
-        message.reply("ouge");
-    }
+        case (message.content.toLowerCase()==="feur"):
+        message.reply("ouge"); 
+        break;
 
-    else if (message.content.toUpperCase()==="GORGE"){
+        case (message.content.toLowerCase()==="feur !"):
+        message.reply("ouge");
+        break;
+
+        case (message.content.toLowerCase()==="gorge"):
         message.reply("profonde");
+        break;
+
+        case (message.content.toLowerCase()==="bril"):
+        message.reply("ça veut dire 'lunettes' en néerlandais");
+        break;
+    
+        case (message.content.toLowerCase()==="frere"):
+        message.reply("ça veut dire 'lunettes' en néerlandais");
+        break;
+
+        case (message.content.toUpperCase()==="frère"):
+        message.reply("Jacques");
+        break;
     }
 })
 
